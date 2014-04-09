@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="../../style/css/slide/slider.css" />
+  <title>slider demo</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+</head>
+<body class="demo">
+<div class="container">
+  <ul class="x_list pic-list">
+    <li class="cur"><a href="#"><img src="/img/slide/demo/1.jpg" alt="" /></a></li>
+    <li class=""><a href="#"><img src="/img/slide/demo/2.jpg" alt="" /></a></li>
+    <li><a href="#"><img src="/img/slide/demo/3.jpg" alt="" /></a></li>
+    <li><a href="#"><img src="/img/slide/demo/4.jpg" alt="" /></a></li>
+    <li class=""><a href="#"><img src="/img/slide/demo/5.jpg" alt="" /></a></li>
+  </ul>
+  <ul class="x_dots pic-index">
+    <li class="cur"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <a class="x_prev prev icon" href="javascript:;">&#xf053;</a>
+  <a class="x_next next icon" href="javascript:;">&#xf054;</a>
+</div>
+<script src="/js/slider/slider.js"></script>
+<script>
+  $('.container').x_slider();
+</script>
+</body>
+</html>
