@@ -65,8 +65,15 @@
           while (el) {
             height += el.offsetTop;
             width += el.offsetLeft;
-            el = el.offsetParent;
-            if (el == _.container) break;
+            if(el.offsetParent == document.body || el.offsetParent == _.container){
+              if(el.offsetParent == document.body){
+                height -= _.container.offsetTop;
+                width -= _.container.offsetLeft;
+              }
+              break;
+            }else{
+              el = el.offsetParent;
+            }
           }
           if ((height >= mintop && height <= maxtop) && (width >= minleft && width <= maxleft)) {
             return true;
